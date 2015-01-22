@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShinyApps - Car Evaluation Tool</title>
+  <meta charset="utf-8">
+  <meta name="description" content="ShinyApps - Car Evaluation Tool">
+  <meta name="author" content="S. Kairs">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>ShinyApps - Car Evaluation Tool</h1>
+    <h2>Developing Data Products Course Project</h2>
+    <p>S. Kairs<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Choosing a new or used car can be a stressful, complicated process involving many factors.  What if there were an easy way to rank potential vehicles based on a few key attributes?  Our ShinyApp tool does just that!  Select values for the following characteristics, and the tool will give your potential new car an overall score.</p>
+
+<ul>
+<li>Purchase Price<br></li>
+<li>Maintenance Cost<br></li>
+<li>Number of Doors<br></li>
+<li>Number of Passengers<br></li>
+<li>Cargo Capcity<br></li>
+<li>Overall Safety Rating<br></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>How does it work?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>We used a publically available data set of over 1000 car evaluations to build a prediction model.  These evaluations included data on the same six attributes we are asking you to enter, as well as an overall score determined by scientists at UCI.  The four possible scores are unacceptable, acceptable, good and very good.  </p>
+
+<p><b>Give it a try</b><br>
+You can try our tool out at <a href="https://skairs.shinyapps.io/9_DataProducts/">our shinyapps.io page</a>.  Please give the tool a few moments to load and then select your car&#39;s attributes from the drop down menus in the left sidebar.  </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>How does my car compare to other, similar cars?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-1-1.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" /></p>
+
+<p>Purchase Price and Safety are two key features in determining the overall score for a car.  As this plot demonstrates, a car must be relatively inexpensive and very safe to get a Very Good rating from UCI.  It is possible to get a Good rating with medium safety, or every an Acceptable rating with higher prices.  Low safety scores always earn cars an Unacceptable rating.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Acknowledgements</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Thank you to UCI&#39;s Machine Learning Repository for free access to the Car Evaluation Data Set and to Professors Caffo, Leek and Peng from JHU&#39;s Bloomberg School of Public Health for their publically available Coursera Data Science Specialization classes.  </p>
+
+<p><b>UCI Machine Learning Repository</b><br>
+Car Evaluation Data Set<br>
+Bache, K. &amp; Lichman, M. (2013). UCI Machine Learning Repository [<a href="http://archive.ics.uci.edu/ml">http://archive.ics.uci.edu/ml</a>]. Irvine, CA: University of California, School of Information and Computer Science.  </p>
+
+<p><b>Johns Hopkins Data Science Specialization at Coursera</b><br>
+<a href="http://www.jhu.edu">Johns Hopkins University</a>, Bloomberg School of Public Health<br>
+<a href="http://coursera.org">Coursera</a>  </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Introduction'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='How does it work?'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='How does my car compare to other, similar cars?'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Acknowledgements'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
